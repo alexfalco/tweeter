@@ -1,0 +1,40 @@
+
+
+#navBar{
+  /* position: fixed; */
+  font-family: 'Bungee', sans-serif;
+  position:fixed;
+ 
+  font-size:xx-large;
+  display: inline-block
+  height: 120px;
+  width: 100%;
+  background-color:#4056A1;
+  color: #FFFFFF;
+  z-index: 1;
+  padding: 1.5em;
+}
+
+#Bar1 {
+
+  align:left;
+  height: 12px;
+
+}
+
+#Bar2 {
+
+  align:right;
+  height: 20px;
+  font-size:medium;
+
+}
+
+
+#Bar2:hover {
+
+  align:right;
+  height: 20px;
+  font-size:large;
+
+}
