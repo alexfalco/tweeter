@@ -22,6 +22,7 @@ const  loadTweets = function() {
 
 }
 
+
 const createTweetElement = function(tweetObj) {
 
   let $tweet = $('<article>');
@@ -44,6 +45,7 @@ const createTweetElement = function(tweetObj) {
  
 }
 
+
 const renderTweets = function(arrayTweet) {
 
 for ( tweet of arrayTweet) {
@@ -53,22 +55,21 @@ for ( tweet of arrayTweet) {
 }
 
 
-// AJAX Request
-
-// selector est le form
-// JQuery permet le handler Submit pour un form
+// Submit a Tweet 
 $(document).ready(function() {
  
   $('.new-tweet form').on('submit', function (event) {
-   
+  
+    
     event.preventDefault()
-    console.log($('#text').val())
+   
     if ($('#text').val() === "") {
-      alert('You need to type something')
-    } else if ($('#text').val().length >= 140) {
-      alert('140 is the Max buddy')
+      $("#erroMsg").text('You need to type something')
+    } else if ($('#text').val().length >= 14) {
+      $("#erroMsg").text('140 is the Max buddy')
     }
     else {
+      $("#erroMsg").text('')
     $.ajax({
       url: '/tweets',
       method: "POST",
@@ -82,8 +83,9 @@ $(document).ready(function() {
 }) 
 
 
+// Unhide the tweet section 
 $(document).ready(function() {
-
+  $('.new-tweet').hide()
 $('#Bar2').click(function() {
   $('.new-tweet').toggle();
 })

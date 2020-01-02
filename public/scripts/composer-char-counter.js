@@ -14,7 +14,7 @@ $(document).ready(function() {
       $("#counter").text(countRemain)
     } 
     else {
-      alert('140 is the Max buddy')
+   
       $("#counter").text(countRemain).css("color", "red");
     }
 
