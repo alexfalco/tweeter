@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -28,16 +29,20 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav id="navBar">
-      <span id="Bar1">Tweeter</span>
-      <button id="Bar2">Write a new tweet</button>
+      <span id="Bar3">Tweeter</span>
+      <button id="Bar4">Write a new tweet</button>
     </nav>
-
+  
     
     <header id="header">
+     
+      <span id="Bar1">Tweeter</span>
+      <button id="Bar2">Write a new tweet</button>
+   
       <div>
-          <img src="/images/profile-hex.png"> 
+          <img id="face" src="/images/profile-hex.png">   
       </div>
-      <br>
+    
       <div>
           <h2 class="nameUser">
       </div>
@@ -47,31 +52,25 @@
     <main class="container">
       
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+         <h2></h2> 
         <form method="POST" action="/tweets">
           <textarea id ="text" name="text" placeholder="What are you humming about?"></textarea>
           <hr></hr>
           <input id="button-tweet" type="submit" value="Tweet">
           <span id ="counter">140</span>
+          <p></p>
         </form>
+        <p></p>
      <p id="erroMsg"></p>
       </section>
-   
+     
       <p></p>
+      <div>
+        <p style="color: #f4f1ec;"> ___ </p>
+     </div>
 
       <section id ="tweetContainer">
-        <!-- <article>
-          <header>
-            <img> </img>
-            <p></p>
-            <p></p>
-            </header>
-            <p></p>
-            <hr></hr>
-            <footer style="color:blue;font-size: 12px;">
-              <p></p>
-            </footer>    
-        </article> -->
+   
         </section>
 
 

@@ -91,3 +91,11 @@ $('#Bar2').click(function() {
 })
 })
 
+
+// Unhide the tweet section 
+$(document).ready(function() {
+  $('.new-tweet').hide()
+$('#Bar4').click(function() {
+  $('.new-tweet').toggle();
+})
+})

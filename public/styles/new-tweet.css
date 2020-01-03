@@ -2,30 +2,32 @@
 #text {
 
 	width: 100%;
-	height: 100px;
+	height: 50px;
 	border: none;
 	background-image: url(bg.gif);
 	background-position: bottom right;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-color: #f4f1ec;
     
 }
 
 
 #button-tweet {
-
+    float: left;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    display: inline-block;
     font-size: 24px;
-    vertical-align: middle;
+   
+    
   }
 
 #counter {
-  display: inline-block;
-  text-align: right;
+  
+  float: right; 
+  
 }   
 
   article {

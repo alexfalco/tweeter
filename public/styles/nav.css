@@ -13,28 +13,58 @@
   color: #FFFFFF;
   z-index: 1;
   padding: 1.5em;
+  display:none 
 }
 
+
 #Bar1 {
-
-  align:left;
+  float: left;
+ 
+  font-size:xx-large;
   height: 12px;
-
 }
 
 #Bar2 {
-
-  align:right;
+  float: right;
+ 
   height: 20px;
   font-size:medium;
-
 }
 
 
 #Bar2:hover {
-
-  align:right;
-  height: 20px;
+ 
+  height: 30px;
   font-size:large;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
+  
+ 
+  
+  #navBar{ display:inline;
+  }
+
+  #Bar3 {
+    float: left;
+    vertical-align: middle;
+    font-size:xx-large;
+    height: 12px;
+  
+  
+  }
+  
+  #Bar4 {
+    float: right;
+    height: 20px;
+    font-size:medium;
+
+  }
+ 
+
+  
 
 }
