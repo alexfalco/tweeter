@@ -15,3 +15,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+
+https://github.com/alexfalco/tweeter/blob/master/public/images/Desktop%20view.png
