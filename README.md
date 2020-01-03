@@ -19,5 +19,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## ScreenShots
 
-![Desktop version]https://github.com/alexfalco/tweeter/blob/master/public/images/Desktop%20view.png
-![Mobile version]https://github.com/alexfalco/tweeter/blob/master/public/images/Mobile%20View.png
+![Desktop version](https://github.com/alexfalco/tweeter/blob/master/public/images/Desktop%20view.png)
+![Mobile version](https://github.com/alexfalco/tweeter/blob/master/public/images/Mobile%20View.png)
