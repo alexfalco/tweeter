@@ -5,8 +5,8 @@
  */
 
 $(document).ready(function() {
-  loadTweets()
-})
+  loadTweets();
+});
 
 
 
@@ -14,13 +14,14 @@ const  loadTweets = function() {
   $.ajax({
     url: '/tweets',
     method: "GET",
-    //dataType: JSON , 
+    //dataType: JSON ,
   })
-  .done(function(result) {
-    renderTweets(result) }
-  );
+    .done(function(result) {
+      renderTweets(result);
+    }
+    );
 
-}
+};
 
 
 const createTweetElement = function(tweetObj) {
@@ -35,67 +36,67 @@ const createTweetElement = function(tweetObj) {
   let $footer = $('<footer>').text(tweetObj.created_at);
   
   $header = $header
-  .append($avatar)
-  .append($username)
-  .append($handle);
+    .append($avatar)
+    .append($username)
+    .append($handle);
    
-  $tweet = $tweet.append($header).append($content).append($line).append($footer)
+  $tweet = $tweet.append($header).append($content).append($line).append($footer);
 
-  $("#tweetContainer").prepend($tweet)
+  $("#tweetContainer").prepend($tweet);
  
-}
+};
 
 
 const renderTweets = function(arrayTweet) {
 
-for ( tweet of arrayTweet) {
-  createTweetElement(tweet)
-}
+  for (let tweet of arrayTweet) {
+    createTweetElement(tweet);
+  }
 
-}
+};
 
 
-// Submit a Tweet 
+// Submit a Tweet
 $(document).ready(function() {
  
-  $('.new-tweet form').on('submit', function (event) {
+  $('.new-tweet form').on('submit', function(event) {
   
     
-    event.preventDefault()
+    event.preventDefault();
    
     if ($('#text').val() === "") {
-      $("#erroMsg").text('You need to type something')
+      $("#erroMsg").text('You need to type something');
     } else if ($('#text').val().length >= 14) {
-      $("#erroMsg").text('140 is the Max buddy')
+      $("#erroMsg").text('140 is the Max buddy');
+    } else {
+      $("#erroMsg").text('');
+      $.ajax({
+        url: '/tweets',
+        method: "POST",
+        data: $('#text').serialize(),
+      })
+        .done(function(result) {
+          loadTweets(result);
+        });
     }
-    else {
-      $("#erroMsg").text('')
-    $.ajax({
-      url: '/tweets',
-      method: "POST",
-      data: $('#text').serialize(), 
-    })
-    .done(function(result) {
-      loadTweets(result) })
-  }
-  }); 
+  });
 
-}) 
+});
 
 
-// Unhide the tweet section 
+// Unhide the tweet section
 $(document).ready(function() {
-  $('.new-tweet').hide()
-$('#Bar2').click(function() {
-  $('.new-tweet').toggle();
-})
-})
+  $('.new-tweet').hide();
+  $('#Bar2').click(function() {
+    $('.new-tweet').toggle();
+  });
+});
 
 
-// Unhide the tweet section 
+// Unhide the tweet section
 $(document).ready(function() {
-  $('.new-tweet').hide()
-$('#Bar4').click(function() {
-  $('.new-tweet').toggle();
-})
-})
+  $('.new-tweet').hide();
+  $('#Bar4').click(function() {
+    $('.new-tweet').toggle();
+  });
+});
