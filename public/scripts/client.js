@@ -52,13 +52,17 @@ $(document).ready(function() {
   // Unhide the tweet section
   $(".new-tweet").hide();
   $("#Bar2").click(function() {
-    $(".new-tweet").toggle();
+    $(".new-tweet")
+      .toggle()
+      .animate({ height: "show" });
   });
 
   // Unhide the tweet section
   $(".new-tweet").hide();
   $("#Bar4").click(function() {
-    $(".new-tweet").toggle();
+    $(".new-tweet")
+      .toggle()
+      .animate({ height: "show" });
   });
 
   // Submit a Tweet
