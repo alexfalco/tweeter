@@ -1,54 +1,39 @@
-
-#header{
- 
-  font-family: 'Bungee', sans-serif;
+#header {
+  font-family: "Bungee", sans-serif;
   font-size: large;
   height: 400px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 1;
   padding: 1.5em;
   text-align: center;
   background-color: #0b00ab;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-
 }
 
-
-
-
 @media only screen and (min-width: 768px) {
-
   /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
-  
+
   #header {
-      margin-left: 5%;
-      margin-top: 12%;
-      float:left;
-      width: 30%;
-      height: 20%;
-    
+    margin-left: 5%;
+    margin-top: 12%;
+    float: left;
+    width: 30%;
+    height: 20%;
   }
-  
+
   #Bar1 {
     display: none;
   }
-  
+
   #Bar2 {
     display: none;
-    
   }
-
-
 
   .container {
     margin-right: 5%;
     margin-top: 10%;
     width: 50%;
-    float: right
+    float: right;
   }
-
-
-  
-
 }

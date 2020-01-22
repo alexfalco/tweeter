@@ -1,70 +1,55 @@
-
-
-#navBar{
+#navBar {
   /* position: fixed; */
-  font-family: 'Bungee', sans-serif;
-  position:fixed;
- 
-  font-size:xx-large;
+  font-family: "Bungee", sans-serif;
+  position: fixed;
+
+  font-size: xx-large;
 
   height: 60px;
   width: 100%;
   background-color: MidnightBlue;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 1;
   padding: 1.5em;
-  display:none 
+  display: none;
 }
-
 
 #Bar1 {
   float: left;
- 
-  font-size:xx-large;
+
+  font-size: xx-large;
   height: 12px;
 }
 
 #Bar2 {
   float: right;
- 
-  height: 20px;
-  font-size:medium;
-}
 
+  height: 20px;
+  font-size: medium;
+}
 
 #Bar2:hover {
- 
   height: 30px;
-  font-size:large;
+  font-size: large;
 }
 
-
 @media only screen and (min-width: 768px) {
-
   /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
-  
- 
-  
-  #navBar{ display:inline;
+
+  #navBar {
+    display: inline;
   }
 
   #Bar3 {
     float: left;
     vertical-align: middle;
-    font-size:xx-large;
+    font-size: xx-large;
     height: 12px;
-  
-  
   }
-  
+
   #Bar4 {
     float: right;
     height: 20px;
-    font-size:medium;
-
+    font-size: medium;
   }
- 
-
-  
-
 }

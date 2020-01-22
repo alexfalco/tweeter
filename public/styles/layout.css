@@ -8,22 +8,20 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'source sans pro', sans-serif;
-
+  font-family: "source sans pro", sans-serif;
 }
 
-
 .container {
-
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -31,4 +29,3 @@ body {
   color: #545149;
   font-size: 24px;
 }
-

@@ -1,36 +1,28 @@
-
 #text {
-
-	width: 100%;
-	height: 50px;
-	border: none;
-	background-image: url(bg.gif);
-	background-position: bottom right;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-image: url(bg.gif);
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-color: #f4f1ec;
-    
 }
 
-
 #button-tweet {
-    float: left;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-    font-size: 24px;
-   
-    
-  }
+  float: left;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  font-size: 24px;
+}
 
 #counter {
-  
-  float: right; 
-  
-}   
+  float: right;
+}
 
-  article {
+article {
   display: block;
   background-color: gray;
   border-radius: 6x;
@@ -41,10 +33,11 @@
   position: relative;
   margin-bottom: 40px;
   border: 5px solid #34495e;
- }
+}
 
-  article:hover {
+article:hover {
   display: block;
+  box-shadow: 5px 10px;
   background-color: gray;
   border-radius: 6x;
   color: black;
@@ -54,6 +47,4 @@
   position: relative;
   margin-bottom: 40px;
   border: 5px solid #34495e;
- }
-
-
+}
