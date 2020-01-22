@@ -77,8 +77,7 @@ $(document).ready(function() {
         data: $("#text").serialize()
       }).done(function(result) {
         loadTweets(result);
-        //$("#text").text("");  Need to Clear the form after submit the tweet
-        //.reset(".new-tweet form");
+        $("#text").val("");
       });
     }
   });
