@@ -15,3 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+
+## ScreenShots
+
+![Desktop version](https://github.com/alexfalco/tweeter/blob/master/public/images/Desktop%20view.png)
+
+
+![Mobile version](https://github.com/alexfalco/tweeter/blob/master/public/images/Mobile%20View.png)
